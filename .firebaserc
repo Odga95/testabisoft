@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "test-c21ab": {
+      "hosting": {
+        "prueba": [
+          "test-c21ab"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "test-c21ab"
+  }
+}

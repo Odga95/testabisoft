@@ -1,0 +1,36 @@
+<div class="container mt-4">
+    <div class="card">
+      <div class="card-body">
+        <span class="h3">Listado Crud</span>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button type="button" class="btn btn-dark" routerLink="/add-user">Agregar</button>
+        </div>
+        <table class="table mt-5">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Edad</th>
+              <th>Fecha Nacimiento</th>
+              <th>Fecha de inscripción</th>
+              <th>Costo</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr *ngFor="let user of users">
+              <td>{{user.name}}</td>
+              <td>{{user.userAge}}</td>
+              <td>{{user.enrollementDagte}}</td>
+              <td>{{user.dateofBirth}}</td>
+              <td>{{user.cost}}</td>
+
+              <td><button type="button" class="btn btn-primary">Editar</button>
+                <button type="button" class="btn btn-danger  ms-4">Eliminar</button>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
